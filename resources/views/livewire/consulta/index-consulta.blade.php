@@ -158,7 +158,17 @@
                     <tr>
                         <td class="p-4">{{ $consulta->cita->paciente->nombre }}
                             {{ $consulta->cita->paciente->apellido }}</td>
-                        <td class="p-4">{{ $consulta->cita->doctor->nombre }} {{ $consulta->cita->doctor->apellido }}
+                        <td class="p-4">
+
+                            <div class="flex items-center space-x-3">
+                                <img src="storage/{{ $consulta->cita->doctor->foto_perfil }}"
+                                    class="w-10 h-10 rounded-full object-cover">
+                                <div>
+                                    <div class="font-semibold">{{ $consulta->cita->doctor->nombre }}
+                                        {{ $consulta->cita->doctor->apellido }}</div>
+                                    <div class="text-sm text-on-surface/70">{{ $consulta->cita->doctor->email }}</div>
+                                </div>
+                            </div>
                         </td>
                         <td class="p-4">{{ Str::limit($consulta->diagnostico, 30) }}</td>
                         <td class="p-4">{{ Str::limit($consulta->tratamiento, 30) }}</td>
