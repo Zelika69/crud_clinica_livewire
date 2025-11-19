@@ -171,19 +171,27 @@
         </div>
     </div>
 
+    <!-- Header -->
+    <div class="flex items-center justify-between">
+        <div>
+            <h1 class="text-3xl font-bold tracking-tight text-on-surface dark:text-on-surface-dark">Pacientes</h1>
+            <p class="mt-2 text-on-surface/70 dark:text-on-surface-dark/70">Gestiona todos tus Pacientes</p>
+        </div>
+    </div>
 
-
-    <!-- primary Button with Icon -->
-    <button onclick="window.location='{{ route('paciente.crear-paciente') }}'" type="button"
-        class="inline-flex justify-center items-center gap-2 whitespace-nowrap rounded-radius bg-primary border border-primary dark:border-primary-dark px-4 py-2 text-base font-medium tracking-wide text-on-primary transition hover:opacity-75 text-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary active:opacity-100 active:outline-offset-0 disabled:opacity-75 disabled:cursor-not-allowed dark:bg-primary-dark dark:text-on-primary-dark dark:focus-visible:outline-primary-dark">
+    <!-- primary Floating Button -->
+<div class="flex items-center justify-left gap-2">
+<span class="">Crear</span>
+        <button onclick="window.location='{{ route('paciente.crear-paciente') }}'" aria-label="create something epic" type="button"
+        class="inline-flex justify-center items-center aspect-square whitespace-nowrap rounded-full border border-primary bg-primary p-2 text-base font-medium tracking-wide text-on-primary transition hover:opacity-75 text-center focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary active:opacity-100 active:outline-offset-0 disabled:opacity-75 disabled:cursor-not-allowed dark:border-primary-dark dark:bg-primary-dark dark:text-on-primary-dark dark:focus-visible:outline-primary-dark">
         <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-            class="size-6 fill-on-primary dark:fill-on-primary-dark" fill="currentColor">
+            class="size-7 fill-on-primary dark:fill-on-primary-dark" fill="currentColor">
             <path fill-rule="evenodd"
                 d="M12 3.75a.75.75 0 01.75.75v6.75h6.75a.75.75 0 010 1.5h-6.75v6.75a.75.75 0 01-1.5 0v-6.75H4.5a.75.75 0 010-1.5h6.75V4.5a.75.75 0 01.75-.75z"
                 clip-rule="evenodd" />
         </svg>
-        Create
     </button>
+</div>
     <div class="overflow-hidden w-full overflow-x-auto rounded-radius border border-outline dark:border-outline-dark">
         <table class="w-full text-left text-sm text-on-surface dark:text-on-surface-dark">
             <thead

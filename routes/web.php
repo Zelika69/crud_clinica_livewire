@@ -50,8 +50,8 @@ Route::middleware(['auth'])->group(function () {
         Route::get('paciente/{paciente}/editar', EditarPaciente::class)->name('paciente.editar-paciente');
 
         Route::get('doctor', IndexDoctor::class)->name('doctor.index-doctor');
-        Route::get('doctor/crear', CrearDoctor::class)->name('paciente.crear-doctor');
-        Route::get('doctor/{doctor}/editar', EditarDoctor::class)->name('paciente.editar-doctor');
+        Route::get('doctor/crear', CrearDoctor::class)->name('doctor.crear-doctor');
+        Route::get('doctor/{doctor}/editar', EditarDoctor::class)->name('doctor.editar-doctor');
 
         Route::get('cita', IndexCita::class)->name('cita.index-cita');
         Route::get('cita/crear', CrearCita::class)->name('cita.crear-cita');

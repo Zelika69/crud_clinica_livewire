@@ -1,11 +1,5 @@
 <div class="space-y-5">
-    <!-- Header -->
-    <div class="flex items-center justify-between">
-        <div>
-            <h1 class="text-3xl font-bold tracking-tight text-on-surface dark:text-on-surface-dark">Citas</h1>
-            <p class="mt-2 text-on-surface/70 dark:text-on-surface-dark/70">Gestiona todas tus Citas médicas</p>
-        </div>
-    </div>
+
     <!-- Notifications -->
     <div x-data="{
         notifications: [],
@@ -176,7 +170,13 @@
             </template>
         </div>
     </div>
-
+    <!-- Header -->
+    <div class="flex items-center justify-between">
+        <div>
+            <h1 class="text-3xl font-bold tracking-tight text-on-surface dark:text-on-surface-dark">Citas</h1>
+            <p class="mt-2 text-on-surface/70 dark:text-on-surface-dark/70">Gestiona todas tus Citas médicas</p>
+        </div>
+    </div>
     <!-- primary Floating Button -->
 <div class="flex items-center justify-left gap-2">
 <span class="">Crear</span>
